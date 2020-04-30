@@ -77,8 +77,7 @@ body {
   text-align: center;
   margin: 0;
 }
-.gallery-title:after,
-.blog-title:after {
+.gallery-title:after {
   display: block;
   width: 164px;
   height: 7px;
@@ -86,6 +85,16 @@ body {
   margin: 0 auto;
   margin-top: 32px;
   margin-bottom: 92px;
+  content: "";
+}
+.blog-title:after {
+  display: block;
+  width: 164px;
+  height: 7px;
+  background-color: #1abc9c;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 82px;
   content: "";
 }
 .product-list {
@@ -105,22 +114,22 @@ body {
 .product-list-item:nth-last-child(n + 5) {
   margin-bottom: 30px;
 }
-.product-list-item:hover .product-list-title a {
+.product-list-item:hover .product-list-title h3 {
   background-color: rgba(25, 187, 155, 1);
 }
 .product-list-item:hover .product-list-title p {
   background-color: rgb(118, 199, 183);
 }
-.product-list-title a {
-  display: block;
+.product-list-title h3 {
   float: left;
-  text-decoration: none;
   width: 200px;
   height: 40px;
+  padding-left: 12px;
   background-color: rgba(50, 50, 50, 1);
 }
-.product-list-title h3 {
-  padding-left: 12px;
+.product-list-title a {
+  text-decoration: none;
+  color: #ffffff;
 }
 .product-list-title h3,
 .product-list-price {
@@ -128,8 +137,6 @@ body {
   font-weight: 900;
   font-size: 18px;
   line-height: 22px;
-  color: #ffffff;
-  text-decoration: none;
   text-transform: uppercase;
   margin: 0 auto;
   padding-top: 9px;
@@ -138,6 +145,7 @@ body {
   width: 55px;
   height: 40px;
   float: right;
+  color: #ffffff;
   background-color: rgba(140, 140, 140, 1);
   text-align: center;
 }
